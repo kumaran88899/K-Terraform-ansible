@@ -13,7 +13,7 @@ resource "aws_instance" "r100c96" {
       host        = aws_instance.r100c96.public_dns
       type        = "ssh"
       user        = "ec2-user"
-      private_key = file("./aws-exam-testing.pem")
+      private_key = file("./team-pem.pem")
     }
   }
 
